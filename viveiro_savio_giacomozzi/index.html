@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viveiro Sávio Giacomozzi — Mudas direto do produtor</title>
+  <meta name="description" content="Viveiro Sávio Giacomozzi. Mudas de qualidade direto do produtor em Santa Catarina. Frutíferas, ornamentais, nativas e muito mais." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <a href="#home" class="logo" aria-label="Viveiro Sávio Giacomozzi">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">
+          <strong>Viveiro</strong> Sávio Giacomozzi
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="nav-desktop" aria-label="Menu principal">
+        <a href="#home">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+      <a href="#home" class="nav-mobile__link">Início</a>
+      <a href="#catalogo" class="nav-mobile__link">Catálogo</a>
+      <a href="#sobre" class="nav-mobile__link">Sobre</a>
+      <a href="#contato" class="nav-mobile__link">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO / HOME
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Decorative botanical SVG layer -->
+    <div class="hero__bg-art" aria-hidden="true">
+      <svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <circle cx="820" cy="80"  r="220" fill="#2d5a27" opacity="0.18"/>
+        <circle cx="100" cy="500" r="180" fill="#4a7c3f" opacity="0.14"/>
+        <circle cx="460" cy="320" r="280" fill="#1a3d17" opacity="0.10"/>
+      </svg>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__badge">🌱 Produção própria desde 1993</div>
+      <h1 class="hero__title">
+        Viveiro<br/>
+        <em>Sávio Giacomozzi</em>
+      </h1>
+      <p class="hero__sub">Mudas de Qualidade Direto do Produtor</p>
+      <p class="hero__desc">
+        Do solo ao seu jardim — cultivamos cada muda com dedicação,<br class="br-hide"/>
+        garantindo saúde, vigor e beleza para o seu espaço verde.
+      </p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--whatsapp" id="heroWhatsapp">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.036 23.145a.75.75 0 0 0 .916.898l5.424-1.419A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.5-5.105-1.373l-.367-.214-3.214.84.875-3.131-.232-.381A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="#catalogo" class="btn btn--outline">Ver Catálogo</a>
+      </div>
+    </div>
+
+    <!-- Decorative leaf strips -->
+    <div class="hero__strip" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============================================================
+       STATS / DESTAQUES
+  ============================================================ -->
+  <section class="stats" aria-label="Nossos números">
+    <div class="container stats__grid">
+      <div class="stat-item" data-animate>
+        <span class="stat-item__number">30+</span>
+        <span class="stat-item__label">Anos de experiência</span>
+      </div>
+      <div class="stat-item" data-animate>
+        <span class="stat-item__number">150+</span>
+        <span class="stat-item__label">Espécies disponíveis</span>
+      </div>
+      <div class="stat-item" data-animate>
+        <span class="stat-item__number">5.000+</span>
+        <span class="stat-item__label">Clientes atendidos</span>
+      </div>
+      <div class="stat-item" data-animate>
+        <span class="stat-item__number">100%</span>
+        <span class="stat-item__label">Produção própria</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATÁLOGO DE PLANTAS
+  ============================================================ -->
+  <section class="catalogo" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Catálogo</span>
+        <h2 class="section-header__title">Nossas Plantas</h2>
+        <p class="section-header__desc">Mudas saudáveis, cultivadas com cuidado para o seu jardim, horta ou paisagismo.</p>
+      </div>
+
+      <!-- Filtros de categoria -->
+      <div class="filter-bar" role="tablist" aria-label="Filtrar plantas por categoria">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todas</button>
+        <button class="filter-btn" data-filter="frutiferas" role="tab" aria-selected="false">Frutíferas</button>
+        <button class="filter-btn" data-filter="ornamentais" role="tab" aria-selected="false">Ornamentais</button>
+        <button class="filter-btn" data-filter="nativas" role="tab" aria-selected="false">Nativas</button>
+        <button class="filter-btn" data-filter="aromaticas" role="tab" aria-selected="false">Aromáticas</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="cards-grid" id="cardsGrid">
+        <!-- Cards gerados via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE
+  ============================================================ -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__inner">
+
+      <div class="sobre__visual" aria-hidden="true">
+        <div class="sobre__photo-frame">
+          <img src="./imagens/teste.jpg" alt="Viveiro Sávio Giacomozzi" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius-lg);" />
+          <!-- Decorative botanical icons -->
+          <div class="botanical-deco">
+            <span class="bd bd--1">🌿</span>
+            <span class="bd bd--2">🌱</span>
+            <span class="bd bd--3">🍃</span>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre__text">
+        <span class="section-header__tag">Sobre nós</span>
+        <h2 class="sobre__title">Paixão pelas plantas,<br/><em>desde o início</em></h2>
+        <p>
+          O Viveiro Sávio Giacomozzi nasceu em 1993, em Rio do Oeste (SC), da vontade de Sávio de transformar seu amor pelas plantas em um negócio de qualidade. Ao longo de mais de 30 anos, construímos uma reputação sólida no cultivo de mudas saudáveis e na atenção ao cliente.
+        </p>
+        <p>
+          Toda a nossa produção é própria — do semeio ao vaso. Isso garante controle total sobre a qualidade, a sanidade das mudas e a procedência de cada espécie que sai daqui.
+        </p>
+        <p>
+          Atendemos paisagistas, construtoras, prefeituras e clientes revendedores em todo o Brasil. Seja um jardim residencial ou um grande projeto de reflorestamento, temos a muda certa para cada necessidade.
+        </p>
+
+        <ul class="sobre__features">
+          <li>
+            <span class="feature-icon">✔</span>
+            <span>Mudas produzidas 100% no viveiro</span>
+          </li>
+          <li>
+            <span class="feature-icon">✔</span>
+            <span>Espécies nativas e exóticas certificadas</span>
+          </li>
+          <li>
+            <span class="feature-icon">✔</span>
+            <span>Atendimento personalizado e consultoria</span>
+          </li>
+          <li>
+            <span class="feature-icon">✔</span>
+            <span>Entrega na região do Alto Vale do Itajaí</span>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn--whatsapp" id="sobreWhatsapp">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.036 23.145a.75.75 0 0 0 .916.898l5.424-1.419A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.5-5.105-1.373l-.367-.214-3.214.84.875-3.131-.232-.381A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Fale conosco agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO
+  ============================================================ -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-header__tag">Contato</span>
+        <h2 class="section-header__title">Venha nos visitar</h2>
+        <p class="section-header__desc">Estamos sempre prontos para atendê-lo com cuidado e atenção.</p>
+      </div>
+
+      <div class="contato__grid">
+        <!-- Info cards -->
+        <div class="contato__info">
+
+          <div class="info-card">
+            <span class="info-card__icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Estrada Geral Angico <br/>Rio do Oeste — SC, 89180-000</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-card__icon">🕒</span>
+            <div>
+              <strong>Horário de funcionamento</strong>
+              <p>Segunda a Sexta: 7h às 18h<br/>Sábados: 8h às 12h</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-card__icon">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>(47) 99645-5284 (Eliane)</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn--whatsapp btn--full" id="contatoWhatsapp">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.036 23.145a.75.75 0 0 0 .916.898l5.424-1.419A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.5-5.105-1.373l-.367-.214-3.214.84.875-3.131-.232-.381A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Enviar mensagem no WhatsApp
+          </a>
+        </div>
+
+        <!-- Mapa -->
+        <div class="contato__mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1491.6268887045255!2d-49.841701436800754!3d-27.22837325829725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dfcf24ecdf8aa5%3A0x31631d253d05b7c4!2sViveiro%20Savio%20Giacomozzi!5e0!3m2!1spt-BR!2sbr!4v1774557422356!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização do Viveiro Sávio Giacomozzi"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-icon">🌿</span>
+        <span>Viveiro Sávio Giacomozzi</span>
+      </div>
+      <p class="footer__copy">© 2026 Viveiro Sávio Giacomozzi · Rio do Oeste, SC · Todos os direitos reservados.</p>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="#home">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO FLUTUANTE WHATSAPP
+  ============================================================ -->
+  <a href="#" class="fab-whatsapp" id="fabWhatsapp" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.036 23.145a.75.75 0 0 0 .916.898l5.424-1.419A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.5-5.105-1.373l-.367-.214-3.214.84.875-3.131-.232-.381A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="fab-whatsapp__tooltip">Fale conosco!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
