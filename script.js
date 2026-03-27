@@ -26,40 +26,40 @@ const CONFIG = {
 const PLANTS = [
   // ── Frutíferas ──
   {
-    name: 'Abacateiro',
-    sci:  'Persea americana',
+    name: 'Tangerina Ponkan',
+    sci:  'Citrus reticulata Blanco',
     cat:  'frutiferas',
     catLabel: 'Frutífera',
-    emoji: '🥑',
+    img: 'img/tangerinaponkan.jpg',
     bg: '#c8e6c9',
-    desc: 'Frutífera tropical de porte médio a grande, produz frutos ricos em gorduras saudáveis. Ótima para pomares residenciais e comerciais.',
+    desc: 'Tangerina Ponkan com produção entre outono e inverno, fruta doce, suculenta, fácil de descascar, ideal para cultivo doméstico e comercial em diversas regiões.',
   },
   {
-    name: 'Pitangueira',
-    sci:  'Eugenia uniflora',
+    name: 'Laranja Bahia (Umbigo)',
+    sci:  'Citrus sinensis',
     cat:  'frutiferas',
     catLabel: 'Frutífera',
-    emoji: '🍒',
+    img: 'img/laranjabahia.webp',
     bg: '#ffcdd2',
-    desc: 'Arbusto nativo do sul do Brasil, produz frutos vermelhos deliciosos, ricos em vitamina C. Ótima para cercas-vivas e jardins.',
+    desc: 'Laranja Bahia Umbigo com produção precoce, frutos grandes, doces, sem sementes, casca fácil de remover, ideal para consumo in natura e cultivo comercial rentável.',
   },
   {
-    name: 'Jabuticabeira',
-    sci:  'Plinia cauliflora',
-    cat:  'frutiferas',
-    catLabel: 'Frutífera',
-    emoji: '🍇',
-    bg: '#e8d5f5',
-    desc: 'Árvore nativa brasileira icônica. Os frutos roxos crescem diretamente no tronco, com polpa suculenta e adocicada.',
-  },
-  {
-    name: 'Limoeiro Tahiti',
+    name: 'Limão Tahiti',
     sci:  'Citrus latifolia',
     cat:  'frutiferas',
     catLabel: 'Frutífera',
-    emoji: '🍋',
+    img: 'img/limaotahiti.jpg',
+    bg: '#e8d5f5',
+    desc: 'Limão Tahiti com produção quase o ano todo, frutos suculentos, sem sementes, casca fina, sabor ácido, ideal para consumo, sucos, temperos e cultivo comercial.',
+  },
+  {
+    name: 'Tangerina Comum',
+    sci:  'Citrus reticulata',
+    cat:  'frutiferas',
+    catLabel: 'Frutífera',
+    img: 'img/tangerinacomum.png',
     bg: '#fff9c4',
-    desc: 'Variedade mais cultivada no Brasil. Frutos ácidos e suculentos, sem sementes. Alta produtividade e rusticidade.',
+    desc: 'Tangerina comum com produção no outono, frutos doces, aromáticos, casca fácil de descascar, rica em vitamina C, ideal para consumo fresco e cultivo doméstico.',
   },
 
   // ── Ornamentais ──
@@ -68,7 +68,7 @@ const PLANTS = [
     sci:  'Handroanthus albus',
     cat:  'ornamentais',
     catLabel: 'Ornamental',
-    emoji: '🌼',
+    img: 'img/ipeamarelo.jpg',
     bg: '#fff9c4',
     desc: 'Símbolo nacional do Brasil, floração exuberante em amarelo intenso. Árvore de grande porte ideal para arborização urbana e jardins.',
   },
@@ -77,27 +77,27 @@ const PLANTS = [
     sci:  'Tibouchina granulosa',
     cat:  'ornamentais',
     catLabel: 'Ornamental',
-    emoji: '💜',
+    img: 'img/quaresmeira.webp',
     bg: '#e8d5f5',
     desc: 'Arbusto ou árvore de pequeno porte com flores roxas deslumbrantes. Floresce no outono, enchendo jardins de cor e beleza.',
   },
   {
-    name: 'Palmeira Cariota',
-    sci:  'Caryota urens',
+    name: 'Palmeira Azul',
+    sci:  'Bismarckia nobilis',
     cat:  'ornamentais',
     catLabel: 'Ornamental',
-    emoji: '🌴',
+    img: 'img/palmeiraazul.webp',
     bg: '#c8e6c9',
-    desc: 'Palmeira de aspecto tropical exótico, com folhas bipinadas únicas. Ideal para projetos paisagísticos modernos e áreas externas.',
+    desc: 'Palmeira Azul ornamental de crescimento lento, folhas prateadas exuberantes, ideal para paisagismo, resistente ao calor, adapta-se bem a climas tropicais e subtropicais.',
   },
   {
-    name: 'Azaleia',
+    name: 'Azaleia Branca',
     sci:  'Rhododendron simsii',
     cat:  'ornamentais',
     catLabel: 'Ornamental',
-    emoji: '🌸',
+    img: 'img/azaleiabranca.webp',
     bg: '#fce4ec',
-    desc: 'Arbusto compacto com flores abundantes em tons de rosa, vermelho e branco. Perfeita para vasos, jardins e bordaduras floridas.',
+    desc: 'Azaleia branca com floração no inverno e primavera, flores delicadas e ornamentais, ideal para jardins, vasos, clima ameno, valorizando paisagismo residencial e comercial.',
   },
 
   // ── Nativas ──
@@ -106,7 +106,7 @@ const PLANTS = [
     sci:  'Araucaria angustifolia',
     cat:  'nativas',
     catLabel: 'Nativa',
-    emoji: '🌲',
+    img: 'img/araucaria.jpg',
     bg: '#dcedc8',
     desc: 'Símbolo de Santa Catarina e do Paraná. Espécie nativa ameaçada, essencial para a restauração da Floresta de Araucárias.',
   },
@@ -115,7 +115,7 @@ const PLANTS = [
     sci:  'Ocotea odorifera',
     cat:  'nativas',
     catLabel: 'Nativa',
-    emoji: '🌳',
+    img: 'img/canelasassafras.jpg',
     bg: '#d7ccc8',
     desc: 'Árvore nativa da Mata Atlântica com madeira e folhas aromáticas. Importante para recuperação de matas ciliares e reflorestamento.',
   },
@@ -124,7 +124,7 @@ const PLANTS = [
     sci:  'Ilex paraguariensis',
     cat:  'nativas',
     catLabel: 'Nativa',
-    emoji: '🍵',
+    img: 'img/ervamate.jpg',
     bg: '#c8e6c9',
     desc: 'Arbusto nativo da Mata Atlântica, base do chimarrão gaúcho e catarinense. Pode ser cultivada em sistemas agroflorestais ou hortas.',
   },
@@ -133,47 +133,47 @@ const PLANTS = [
     sci:  'Toona ciliata',
     cat:  'nativas',
     catLabel: 'Nativa',
-    emoji: '🌲',
+    img: 'img/cedroaustraliano.webp',
     bg: '#b2dfdb',
     desc: 'Árvore de rápido crescimento indicada para reflorestamento e recuperação de áreas degradadas. Madeira valorizada.',
   },
 
   // ── Aromáticas ──
   {
-    name: 'Lavanda',
-    sci:  'Lavandula angustifolia',
+    name: 'Teste',
+    sci:  'sci',
     cat:  'aromaticas',
-    catLabel: 'Aromática',
+    catLabel: 'Teste',
     emoji: '💜',
     bg: '#ede7f6',
-    desc: 'Planta aromática mediterrânea muito apreciada. Flores roxas perfumadas, ideal para bordaduras, jardins secos e produção de óleo.',
+    desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   },
   {
-    name: 'Manjericão',
-    sci:  'Ocimum basilicum',
+    name: 'Teste',
+    sci:  'sci',
     cat:  'aromaticas',
-    catLabel: 'Aromática',
+    catLabel: 'Teste',
     emoji: '🌿',
     bg: '#c8e6c9',
-    desc: 'Erva culinária essencial na cozinha italiana e brasileira. Fácil de cultivar em vasos ou hortas, com aroma intenso e inconfundível.',
+    desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   },
   {
-    name: 'Hortelã',
-    sci:  'Mentha spicata',
+    name: 'Teste',
+    sci:  'sci',
     cat:  'aromaticas',
-    catLabel: 'Aromática',
+    catLabel: 'Teste',
     emoji: '🌱',
     bg: '#b2dfdb',
-    desc: 'Planta aromática de rápido crescimento. Ótima para chás, culinária e drinks. Prefere ambientes úmidos e sombra parcial.',
+    desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   },
   {
-    name: 'Alecrim',
-    sci:  'Rosmarinus officinalis',
+    name: 'Teste',
+    sci:  'sci',
     cat:  'aromaticas',
-    catLabel: 'Aromática',
+    catLabel: 'Teste',
     emoji: '🌾',
     bg: '#e0f2f1',
-    desc: 'Arbusto aromático mediterrâneo resistente à seca. Amplamente usado na culinária e como planta ornamental em jardins e vasos.',
+    desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   },
 ];
 
@@ -217,11 +217,14 @@ function renderCards(filter = 'all') {
     card.setAttribute('data-cat', plant.cat);
     card.style.animationDelay = `${i * 0.06}s`;
 
+    // Renderiza imagem real ou emoji como fallback
+    const mediaHtml = plant.img
+      ? `<img src="${plant.img}" alt="${plant.name}" class="plant-card__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="card-emoji-bg" style="background:${plant.bg};height:190px;display:none;" aria-hidden="true">${plant.emoji || '🌱'}</div>`
+      : `<div class="card-emoji-bg" style="background:${plant.bg};height:190px;" aria-hidden="true">${plant.emoji || '🌱'}</div>`;
+
     card.innerHTML = `
       <div class="plant-card__img-wrap">
-        <div class="card-emoji-bg" style="background:${plant.bg};" aria-hidden="true">
-          ${plant.emoji}
-        </div>
+        ${mediaHtml}
         <span class="plant-card__badge">${plant.catLabel}</span>
       </div>
       <div class="plant-card__body">
@@ -237,6 +240,13 @@ function renderCards(filter = 'all') {
         </button>
       </div>
     `;
+
+    // Clique na imagem abre o lightbox
+    card.querySelector('.plant-card__img-wrap').addEventListener('click', () => {
+      const src = plant.img || null;
+      const emoji = plant.emoji || '🌱';
+      openLightbox(src, emoji, plant.name, plant.bg);
+    });
 
     // Evento do botão de interesse → WhatsApp com nome da planta
     card.querySelector('.plant-card__btn').addEventListener('click', () => {
@@ -359,7 +369,66 @@ function initScrollAnimations() {
 }
 
 // ─────────────────────────────────────────────────────────────
-//  SCROLL SUAVE para links âncora
+//  LIGHTBOX — abre imagem em tamanho original
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * Abre o lightbox com a imagem ou emoji da planta.
+ * @param {string|null} src  - Caminho da imagem (ou null se for emoji)
+ * @param {string}      emoji - Emoji de fallback
+ * @param {string}      name  - Nome da planta (acessibilidade)
+ * @param {string}      bg    - Cor de fundo para cards com emoji
+ */
+function openLightbox(src, emoji, name, bg) {
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbEmoji = document.getElementById('lightboxEmoji');
+
+  if (src) {
+    lbImg.src = src;
+    lbImg.alt = name;
+    lbImg.style.display = 'block';
+    lbEmoji.style.display = 'none';
+  } else {
+    lbEmoji.textContent = emoji;
+    lbEmoji.style.background = bg;
+    lbEmoji.style.display = 'flex';
+    lbImg.style.display = 'none';
+  }
+
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden'; // impede scroll do fundo
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  // Limpa src depois da animação para não piscar
+  setTimeout(() => {
+    document.getElementById('lightboxImg').src = '';
+  }, 300);
+}
+
+function initLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+
+  // Fecha ao clicar no fundo fosco
+  lb.addEventListener('click', (e) => {
+    if (e.target === lb) closeLightbox();
+  });
+
+  // Fecha ao clicar no botão X
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+
+  // Fecha com tecla Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+}
+
+// ─────────────────────────────────────────────────────────────
 // ─────────────────────────────────────────────────────────────
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -388,4 +457,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initWhatsAppButtons();  // Botões genéricos de WhatsApp
   initScrollAnimations(); // Animações de entrada por scroll
   initSmoothScroll();     // Scroll suave por âncora
+  initLightbox();         // Lightbox de imagens do catálogo
 });

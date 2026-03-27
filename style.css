@@ -470,15 +470,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: none;
 }
 
-/* Card image */
 .plant-card__img {
   width: 100%;
   height: 190px;
   object-fit: cover;
   display: block;
-  background: var(--green-100);
-  position: relative;
-  overflow: hidden;
+}
+.plant-card__img-wrap {
+  cursor: pointer;
 }
 .plant-card__img-wrap {
   height: 190px;
@@ -843,7 +842,82 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   to   { opacity: 1; transform: scale(1); }
 }
 
-/* ─── EMOJI PLACEHOLDER IMAGES ────────────────────────────── */
+/* ─── LIGHTBOX ───────────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10, 20, 10, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease);
+}
+.lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 88vh;
+  transform: scale(0.92);
+  transition: transform 0.3s var(--ease);
+}
+.lightbox.open .lightbox__content {
+  transform: scale(1);
+}
+.lightbox__img {
+  display: block;
+  max-width: 90vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+  object-fit: contain;
+}
+.lightbox__emoji {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: min(420px, 80vw);
+  height: min(420px, 80vw);
+  border-radius: var(--radius-lg);
+  font-size: 8rem;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+}
+.lightbox__close {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--trans), transform var(--trans);
+  backdrop-filter: blur(4px);
+}
+.lightbox__close:hover {
+  background: rgba(255,255,255,0.28);
+  transform: scale(1.1);
+}
+.lightbox__close svg {
+  width: 20px;
+  height: 20px;
+}
+
 .card-emoji-bg {
   width: 100%;
   height: 190px;
@@ -861,4 +935,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
   .hero__content { padding: 7rem 1rem 5rem; }
+}
+
+.plant-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
