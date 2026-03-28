@@ -25,6 +25,7 @@ const CONFIG = {
 // ─────────────────────────────────────────────────────────────
 const PLANTS = [
   // ── Frutíferas ──
+  
   {
     name: 'Tangerina Ponkan',
     sci:  'Citrus reticulata Blanco',
@@ -138,7 +139,9 @@ const PLANTS = [
     desc: 'Árvore de rápido crescimento indicada para reflorestamento e recuperação de áreas degradadas. Madeira valorizada.',
   },
 
+  
   // ── Aromáticas ──
+  /*
   {
     name: 'Teste',
     sci:  'sci',
@@ -174,8 +177,8 @@ const PLANTS = [
     emoji: '🌾',
     bg: '#e0f2f1',
     desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-  },
-];
+  },*/
+]; 
 
 // ─────────────────────────────────────────────────────────────
 //  FUNÇÕES UTILITÁRIAS
